@@ -37,6 +37,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">{{getenv('REDIS_HOST')}}</div>
+                <button></button>
             </div>
         </div>
     </body>
