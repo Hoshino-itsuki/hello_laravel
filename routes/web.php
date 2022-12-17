@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,10 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/w', function () {
-    return view('welcome-copy');
-});
+Route::get('/',[StaticPagesController::class, 'home']);
+Route::get('/help',[StaticPagesController::class, 'help']);
+Route::get('/about',[StaticPagesController::class, 'about']);
